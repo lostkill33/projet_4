@@ -1,0 +1,363 @@
+/*************************************************************************************************header*/
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #000; 
+}
+
+.sous_header{
+     display: flex;
+    justify-content: space-between;
+     padding: 15px 0;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    align-items: center;
+}
+
+.titre_logo a{
+    color: #fff;
+}
+
+
+header ul,.nav_bar_admin ul{
+    display: flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px){header{padding: 0 5%;}.sous_header{flex-direction: column;}}
+
+@media screen and (max-width: 655px){
+    .sous_header{flex-direction: column;align-items: center;}
+}
+
+@media screen and (max-width: 560px){
+    header ul{flex-direction: column;border: none;}
+    header ul li{text-align: center;}
+}
+
+header ul li,.nav_bar_admin ul li{
+    list-style: none;
+    padding: 15px;
+    margin: 0 15px;
+}
+
+header ul li a,.nav_bar_admin a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+
+header ul li a:hover,.nav_bar_admin a:hover{
+    color: #1bd19e;
+    transition-duration: 0.5s;
+}
+
+.session_pseudo{
+    font-size: 25px;
+    color: #fff;
+    cursor: default;
+}
+
+/**********************************************************************************************************Générale*/
+
+h1{
+    color: #000;
+    cursor: default;
+        text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.blog,#commentaire
+{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+
+/***********************************************************************************************************Accueil*/
+
+
+.accueil,.connection,.inscription{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.accueil,html,body,.connection,.inscription,.contact{
+    height: 90%;
+}
+
+.accueil h1{
+    font-size: 45px;
+}
+
+.accueil a{
+    margin: 0 auto;
+    max-width: 350px;
+    width: 90%;
+    padding: 15px 0;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    font-size: 25px;
+        transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.accueil a:hover{
+    background-color: #1bd19e;
+    color: #000;
+    transition-duration: 0.5s;
+}
+
+/********************************************************************************************************************billet*/
+
+.billet{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.all_billet{
+    border-bottom: 1px solid #1bd19e;
+    padding: 15px 0;
+}
+
+.all_billet:first-child{
+    border-bottom: none;
+}
+
+.all_billet h2{
+    font-size: 30px;
+}
+
+#bannerR{display: none;}
+
+.date_post{
+    text-align: start;
+}
+
+.all_billet .plus{
+    display: table;
+    margin-left: auto;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.all_billet .plus:hover{
+    color: #1BD19E;
+    transition-duration: 0.5s;
+}
+
+.blog .all_billet{
+    padding-bottom: 50px;
+}
+
+/*******************************************************************************************************************post*/
+.comment{
+    margin-top: 100px;
+}
+.comment form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.comment form textarea{
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #000;
+    transition-duration: 0.5s;
+}
+
+.comment form textarea:focus,.comment form textarea:hover{
+    outline: none;
+    border-color: #1bd19e;
+    transition-duration: 0.5s;
+}
+
+.comment form input{
+   margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background: #000;
+    padding: 5px;
+    color: #fff;
+    height: 30px;
+    max-width: 150px;
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+.comment form input:hover{
+    background: #1bd19e;
+    transition-duration: 0.5s;
+}
+
+.comment h2{
+    text-align: center;
+}
+
+.comment > P{
+    background-image: url("image/icon/comment.png");
+    padding-left: 30px;
+    background-position: left center;
+    background-repeat:no-repeat;
+    background-size: 25px;
+    height: 26px;
+}
+
+.comment .all_comment{
+    border-bottom: 1px solid #000;
+    margin: 5px 0;
+    padding: 0 10px; 
+}
+/********************************************************************************************************************connection/inscription*/
+
+.connection form,.inscription form,{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.connection input,.inscription input{
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #000;
+    font-size: 25px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+
+.connection input[type="submit"],.inscription input[type="submit"]{
+    max-width: 150px;
+    background-color: #000;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.connection input[type="submit"]:hover,.inscription input[type="submit"]:hover{
+    background-color: #1bd19e;
+    color: #000;
+}
+
+.connection input:hover,.connection input:focus,.inscription input:hover,.inscription input:focus{
+    border-color: #1bd19e;
+}
+
+.connection ::placeholder{
+    color: rgba(0,0,0,0.7);
+}
+
+
+.register{
+    display: table;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    height: 26px;
+    background-position: 28% 9px;
+    background-image: url("image/icon/icons8-registration-26.png");
+    background-repeat: no-repeat;
+    max-width: 350px;
+    width: 100%;
+    font-size: 25px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.register:hover{
+    border-color: #1bd19e;
+    font-size: 30px;
+    background-position: 24% 15px;
+    transition-duration: 0.3s;
+}
+
+/*****************************************************************************************************************************contact*/ 
+
+.contact{display: flex;flex-direction: column;justify-content: center;}
+
+.contact form,.compte form{
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact form input,.contact form textarea,.compte form input,.compte form textarea{
+    width: 100%;
+    margin: 5px 5px;
+    height: 40px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    max-width: 350px;
+    font-size: 25px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.contact form input[type="submit"],.compte form input[type="submit"]{
+    width: 150px;
+    text-align: center;
+    align-self: flex-end;
+    max-width: 350px;
+    font-size: 25px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid silver;
+}
+
+.contact form input[type="submit"]:hover,.compte form input[type="submit"]:hover{
+    background-color: #1bd19e;
+    color: #fff;
+    border-color: #1bd19e;
+}
+
+.all_comment{
+    border-top: 1px solid #000;
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
